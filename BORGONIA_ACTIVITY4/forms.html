@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ACTIVITY 4.1: HTML Forms</title>
+        <style>
+            body {
+                background-color: #001a0c;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                color: #51ad79;
+            }
+            h3 {
+                font-size: 25px;
+                color: #ffe372;
+                text-align: center;
+            }
+            fieldset {
+                background-color: #032716;
+                border-color: #ffe372;
+                border-style: solid;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                padding-bottom: 50px;
+                }
+            input {
+                background-color: #001a0c;
+                border-color: #001a0c;
+                color: #ffe372;
+                border-style: solid;
+                font-size: 15px;
+            }
+            button {
+                margin: 0;
+                position: absolute;
+                left: 50%;
+                -ms-transform: translate(-50%);
+                transform: translate(-50%);
+                background-color: #1d6e40;
+                border: none;
+                color: #ffe372;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <h3>REGISTRATION FORM</h3>
+                <form>
+                    <div>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" size="30" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="birthday">Birthday:</label>
+                        <label for="age" style="margin-left: 145px;">Age:</label><br>
+                        <input type="date" id="birthday" style="width:195px;" required>
+                        <input type="text" id="age" maxlength="3" size="3" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="gender">Gender:</label><br>
+                        <input type="text" id="gender" size="30" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" size="30" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" size="30" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="confirmPassword">Confirm Password:</label><br>
+                        <input type="password" id="confirmPassword" size="30" required>
+                    </div>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

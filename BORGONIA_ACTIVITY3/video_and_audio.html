@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ACTIVITY 3.1: HTML Video and Audio Tag</title>
+</head>
+<body>
+	<h1>HTML Video and Audio Tag</h1>
+	<ol>
+		<li>The video has a dimension of 360 x 220 pixels.</li>
+		<video width="360" height="220">
+				<source src="seagulls.mp4" type="video/mp4">
+		</video>
+		<li>The dimensions are the same, but this time the video will <i>automatically replay from the beginning once it ends.</i></li>
+		<video width="360" height="220" controls loop>
+				<source src="seagulls.mp4" type="video/mp4">
+		</video>
+		<li>This time, audio is embedded on the website.</li>
+		<audio controls>
+			<source src="audio.mp3" type="audio/mp3">
+		</audio>
+		<li>This same audio is used, but it is <b>muted</b>; setting the volume of the audio to <b>0</b>.</li>
+		<audio controls muted>
+			<source src="audio.mp3" type="audio/mp3">
+		</audio>
+	</ol>
+</body>
