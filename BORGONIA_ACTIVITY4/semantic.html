@@ -4,6 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ACTIVITY 4.2: Semantic HTML</title>
+        <style>
+            body {
+                background-color: #7a1f3d;
+                font-family: Georgia, Times, serif;
+                font-size: 25px;
+                color: #fffee1;
+                margin: 100px;
+            }
+            header{
+                font-size: 30px;
+                color: #fffee1;
+                text-align: center;
+            }
+            h3{
+                font-size: 30px;
+                color: #c5e086;
+            }
+            figure{
+                float: right;
+                color: #fffee1;
+                font-style: italic;
+            }
+            footer, figcaption{
+                font-size: 20px;
+                color: #c5e086;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -11,9 +38,13 @@
         </header>
         <main>
             <section>
+                <figure>
+                    <img src="beetroot.jpg" alt="beetroot">
+                    <figcaption>Fresh Beetroot Photo Credit: Google Images</figcaption>
+                </figure>
                 <h3>What are Beets?</h3>
                 <article>
-                    Beets or beetroots is a root vegetable also known as <i>Beta vulgaris rubra</i> or red beetroot.
+                    Beets or beetroots is a root vegetable also known as <i style="color: #c5e086">Beta vulgaris rubra</i> or red beetroot.
                     Vibrant red or gold beetroot has been planted everywhere from the ancient Mediterranean to George Washington's
                     Mount Vernon. 
                 </article>
@@ -24,10 +55,6 @@
                 </p>
             </section>
             <section>
-                    <figure>
-                        <img src="beetroot.jpg" alt="beetroot">
-                        <figcaption>Fresh Beetroot Photo Credit: Google Images</figcaption>
-                    </figure>
                 <h3>5 Beetroot Benefits</h3>
                 <ol>
                     <li>Prevent heart disease and stroke</li>
