@@ -1,0 +1,110 @@
+body {
+    background-color: #001a0c;
+    font-family: Georgia, Times, serif;
+    font-size: 25px;
+    color: #ffe372;
+    margin: 0;
+}
+
+.asideStyle {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.asideStyle img {
+    border-radius: 50%; 
+    width: 270px; 
+    float: left;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.asideStyle h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #51ad79;
+}
+
+.asideStyle p {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 2;
+}
+
+.skillsStyle {
+    text-align: center;
+    font-size: 40px;
+    color: #51ad79;
+}
+
+.skillsStyle table {
+    margin-left: auto;
+	margin-right: auto;
+    padding-top: 20px;
+    color: #ffe372;
+    font-size: 30px;
+    border-color: #ffe372;
+    border-style: solid;
+}
+
+.skillsStyle td {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.skillsStyle img {
+    width: 100px; 
+}
+
+.footerStyle {
+    margin-left: 30px;
+    font-size: 25px;
+    color: #51ad79;
+}
+
+.spanStyle {
+    font-size: 15px;
+    color: #ffe372
+}
+
+.navStyle {
+    background-color: #032716;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    background-color: #032716;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #1d6e40
+}
+
+a:visited {
+    color: #1d6e40
+}
+
+a:hover {
+    color: #ffe372
+}
+
+a:active {
+    color: #ffe372
+}
