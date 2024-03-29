@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles1.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="bigcontainer">
+		<div class="button-container">
+			<button onclick="onDec()">DEC</button>
+			<button onclick="onBin()">BIN</button>
+			<button onclick="onOct()">OCT</button>
+			<button onclick="onHex()">HEX</button>
+		</div>
+		<div class="container">
+	  		<input type="text" placeholder="Enter text here", id="userInput">
+		</div>	
+		<div class="button-container">
+			<button onclick="convertToDecimal()">DEC</button>
+			<button onclick="convertToBinary()">BIN</button>
+			<button onclick="convertToOctal()">OCT</button>
+			<button onclick="convertToHexadecimal()">HEX</button>
+		</div>
+		<div class="container">
+			<p class="result">Result: <span id="conversionResult"></span></p>
+	  </div>	
+	</div>
+</body>
+</html>
