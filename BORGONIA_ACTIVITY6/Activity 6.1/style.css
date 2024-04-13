@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.mode-button {
+    background-color: #FFD8C7;
+    border: 1px solid #FFD8C7;
+    border-radius: 50px;
+    color: #F3744A;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 40px;
+    transition: background-color 0.3s ease;
+}
+
+.mode-button:active {
+    background-color: #F3744A;
+    color: #FFD8C7;
+}
+
+
+body.dark-mode {
+    background-color: #000000;
+}
+
+body.dark-mode .mode-button {
+    background-color: #FFD8C7;
+    border: 1px solid #FFD8C7;
+    border-radius: 50px;
+    color: #F3744A;
+}
+
+body.dark-mode .mode-button:active {
+    background-color: #F3744A;
+    color: #FFD8C7;
+}
