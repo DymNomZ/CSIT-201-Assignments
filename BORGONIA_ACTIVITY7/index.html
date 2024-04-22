@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ACTIVITY 7: BUILDING AN INTERACTIVE USER INFORMATION TABLE</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/userForm.css">
+	<link rel="stylesheet" type="text/css" href="css/userTable.css">
+</head>
+<body>
+	<header>
+		<h1>DYNAMICALLY ADDED ROWS USING JS</h1>
+	</header>
+	<main>
+		<section id="inputForm">
+			<h2>Input User Information:</h2>
+			<form id="userForm">
+				<div class="form-field">
+					<label for="firstname">Firstname:</label>
+					<input type="text" id="firstname">
+					<small></small>
+				</div>
+				
+				<div class="form-field">
+					<label for="lastname">Lastname:</label>
+					<input type="text" id="lastname">
+					<small></small>
+				</div>	
+				
+				<div class="form-field">
+					<label for="bday">Date of Birth:</label>
+					<input type="date" id="bday">
+					<small></small>
+				</div>
+
+				<legend>Gender:</legend>
+				<fieldset id="gender">
+					<input type="radio" name="gender" value="Male" id="male">
+					<label for="male">Male</label>
+					<input type="radio" name="gender" value="Female" id="female">
+					<label for="female">Female</label>
+					<input type="radio" name="gender" value="Other" id="other">
+					<label for="other">Other</label>
+					<input type="radio" name="gender" value="PreferNot" id="preferNot">
+					<label for="preferNot">Prefer not to say</label>
+					<small></small>
+				</fieldset>
+
+				<div class="buttons">
+					<button type="submit" id="submitButton">Submit</button>
+					<button id="cancelButton">Cancel</button>
+				</div>
+			</form>
+		</section>
+		<section id="userData">
+			<h2>User Information Table</h2>
+			<table id="userTable">
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Gender</th>
+						<th>Date of Birth</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<h3>☘ John Dymier O. Borgonia ☘</h3>
+		<h5>BSCS - 1 - F1		CSIT201 - WEB DEVELOPMENT</h5>
+	</footer>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(){
+			document.getElementById('submitButton').addEventListener('click', submitForm);
+			document.getElementById('cancelButton').addEventListener('click', resetForm);
+		});
+	</script>
+</body>
+</html>

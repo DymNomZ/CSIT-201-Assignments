@@ -1,0 +1,32 @@
+#userData {
+	margin: 50px;
+}
+
+#userData h2 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#userTable {
+	width: 100%;
+	border-collapse: collapse;
+	color: white;
+}
+
+#userTable th, #userData td {
+	padding: 10px;
+	border: 1px solid #9d9d9d;
+}
+
+#userTable th {
+	background-color: #928779;
+}
+
+#userTable tbody tr:nth-child(odd) {
+	background-color: #5E5768;
+}
+
+#userTable tbody tr:nth-child(even) {
+	background-color: #3A445D;
+}
