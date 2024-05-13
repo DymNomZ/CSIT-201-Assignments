@@ -1,0 +1,21 @@
+.countdown{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: 700;
+}
+
+.timer{
+    width: 25%;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 5%;
+}
+
+.timer-text{
+    font-size: 30px;
+}

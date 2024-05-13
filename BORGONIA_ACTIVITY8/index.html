@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ACTIVITY 8: BUILDING A DYNAMIC ONE-PAGE WEBSITE</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/time_layout.css"/>
+        <link rel="stylesheet" href="css/image_slider.css"/>
+        <link rel="stylesheet" href="css/form.css"/>
+    </head>
+    <body>
+        <div class="box-area" id="banner">
+            <header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <img src="images/Solace LOGO.png">
+                        <a href="#">Solace</a>
+                    </div>
+                    <nav>
+                        <a href="#banner">Web Banner</a>
+                        <a href="#products">Product Showcase</a>
+                        <a href="#form">Contact Form</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="banner-area">
+                <h2>DON'T MISS OUT! FIRE SALE ENDS ON:</h2>
+                <section class="countdown">
+                    <div class="timer">
+                        <p id="days">00</p>
+                        <p class="timer-text">DAYS</p>
+                    </div>
+                    <div class="timer">
+                        <p id="hours">00</p>
+                        <p class="timer-text">HOURS</p>
+                    </div>
+                    <div class="timer">
+                        <p id="minutes">00</p>
+                        <p class="timer-text">MINUTES</p>
+                    </div>
+                    <div class="timer">
+                        <p id="seconds">00</p>
+                        <p class="timer-text">SECONDS</p>
+                    </div>
+                </section>
+            </div>
+            <div class="content-area" id="products">
+                <h2>🔥 CHECK OUT OUR LATEST STOCK 🔥</h2>
+                <div class="container">
+                    <section class="slider_wrapper">
+                        <button id="prev_button" class="slide_button material-symbols-rounded">chevron_left</button>
+                        <ul class="image_list">
+                            <li><img src="images/aj01_greenglow.webp" class="image_item" alt="Air Jordan 1 Green Glow"></li>
+                            <li><img src="images/aj01_shadow.webp" class="image_item" alt="Air Jordan 1 Shadow"></li>
+                            <li><img src="images/aj03_greenglow.webp" class="image_item" alt="Air Jordan 3 Green Glow"></li>
+                            <li><img src="images/bode_naturalblack.webp" class="image_item" alt="Nike Astro Grabber X Bode Natural Black"></li>
+                            <li><img src="images/dunk_mediumcurry.webp" class="image_item" alt="Nike Dunk Low Medium Curry"></li>
+                            <li><img src="images/aj01_dustedclay.webp" class="image_item" alt="Air Jordan 1 Dusted Clay"></li>
+                            <li><img src="images/aj03_georgiapeach.webp" class="image_item" alt="Air Jordan 3 Georgia Peach"></li>
+                            <li><img src="images/dunk_bigmoney.webp" class="image_item" alt="Nike Dunk Low Big Money"></li>
+                            <li><img src="images/jack_unired.webp" class="image_item" alt="Jordan Jumpman Jack University Red"></li>
+                            <li><img src="images/kobe08_mambacita.webp" class="image_item" alt="Kobe 8 Mambacita"></li>
+                        </ul>
+                        <button id="next_button" class="slide_button material-symbols-rounded">chevron_right</button>
+                        <div class="popup-image">
+                            <span>&times;</span>
+                            <img src="images/aj01_greenglow.webp" alt=" ">
+                        </div>
+                    </section>
+                    <section class="slider_scrollbar">
+                        <div class="scrollbar_track">
+                            <div class="scrollbar_thumb"></div>
+                        </div>
+                    </section>
+                </div>
+                <section id="inputForm">
+                    <h2>👇 Submit your inquries 👇</h2>
+                    <form id="userForm">
+                        <div class="form-field">
+                            <label for="firstname">Firstname:</label>
+                            <input type="text" id="firstname" size="50">
+                            <small></small>
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="lastname">Lastname:</label>
+                            <input type="text" id="lastname" size="50">
+                            <small></small>
+                        </div>	
+                        
+                        <div class="form-field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email">
+                            <small></small>
+                        </div>	
+
+                        <div class="form-field">
+                            <label for="details">Details:</label>
+                            <textarea name="text" rows="14" cols="10" wrap="soft" id="details"></textarea>
+                            <small></small>
+                        </div>	
+        
+                        <div class="buttons">
+                            <button type="submit" id="submitButton">Submit</button>
+                            <button id="cancelButton">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

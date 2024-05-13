@@ -1,0 +1,96 @@
+#inputForm {
+	margin: 30px auto; 
+	max-width: 75%;
+}
+
+#inputForm h2 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#userForm {
+	display: grid;
+	justify-content: center;
+    text-align: left;
+}
+
+#userForm label {
+	display: block;
+	margin-top: 13px;
+	margin-bottom: 5px;
+}
+
+#userForm input[type="text"], 
+#userForm input[type="email"]{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 15px;
+	border-radius: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 400px;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: red;
+}
+
+.form-field.success input {
+    border-color: greenyellow;
+}
+
+
+.form-field small {
+    color: red;
+}
+
+#details {
+    width: 100%;
+    padding: 12px 0px;
+    font-size: 16px;
+    resize: none;
+    font-family: "Scada", sans-serif;
+}
+
+.buttons {
+	margin: 20px auto;
+	display: inline;
+}
+
+#submitButton {
+	padding: 7px 20px;
+	background-color: #7eb77f;
+	color: white;
+	font-weight: bolder;
+	border: 2px solid #7eb77f;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+#submitButton:hover {
+	background-color: white;
+	color: #7eb77f;
+}
+
+#cancelButton {
+	padding: 7px 20px;
+	background-color: #fc5d5d;
+	color: white;
+	font-weight: bolder;
+	border: 2px solid #fc5d5d;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+#cancelButton:hover {
+	background-color: white;
+	color: #fc5d5d;
+}

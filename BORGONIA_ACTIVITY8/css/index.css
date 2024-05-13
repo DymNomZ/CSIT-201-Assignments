@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Scada", sans-serif;
+    color: black;
+    margin: 0px;
+    text-align: center;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #DFD9C4;
+    position: fixed;
+}
+
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+
+.logo img{
+    border-radius: 50%; 
+    width: 70px;
+    margin-right: 20px;
+    margin-top: 15px;
+    float: left;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Permanent Marker", sans-serif;
+    color: black;
+    letter-spacing: 4px;
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: "Permanent Marker", sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: black;
+    padding: 36px 10px;
+    margin: 0 1px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+}
+
+.banner-area{
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.banner-area:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/overlay.png");
+    background-size: cover;
+    background-position: center center;
+    opacity: .7;
+    z-index: -1;
+}
+
+.banner-area h2{
+    padding-top: 5%;
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+.content-area{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #DFD9C4;
+    top: 550px;
+}
+
+.content-area h2{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 4px;
+}
+
+.content-area p{
+    padding: 2% 0;
+    line-height: 30px;
+    text-align: justify;
+}
