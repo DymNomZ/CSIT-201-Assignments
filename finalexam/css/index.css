@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+	background-color: #FCDEBE;
+	font-family: "Scada", sans-serif;
+}
+
+header {
+	color: black;
+	text-align: center;
+	padding: 15px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	background-color: #D4D2A5;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: red;
+}
+
+.form-field.success input {
+    border-color: greenyellow;
+}
+
+
+.form-field small {
+    color: red;
+}
+
+legend {
+	margin-top: 13px;
+}
+
+footer {
+	margin-left: 20px;
+	margin-bottom: 20px
+}
