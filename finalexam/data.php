@@ -1,5 +1,16 @@
 <?php
 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "finalexam";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+    }
+
     $firstname = $_POST["firstname"];
     $lastname = $_POST["lastname"];
     $bday = $_POST["bday"];
@@ -8,23 +19,19 @@
     $password = $_POST["password"];
     $confirmPassword = $_POST["confirmPassword"];
 
-    echo "test = {$firstname}";
+    $sql = "INSERT INTO user_info (firstname, lastname, bday, gender, email, password_original, confirm_password) 
+            VALUES (?, ?, ?, ?, ?, ?, ?)";
 
-    $host = 'localhost';
-    $user = 'root';
-    $password = '';
-    $db_name = 'finalexam';
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sssssss", $firstname, $lastname, $bday, $gender, $email, $password, $confirmPassword);
 
-    $conn = mysqli_connect($host , $user , $password , $db_name);
-
-    if(mysqli_connect_errno()){
-        die("Failed to connect with MySQL :".mysqli_connect_errno());
-    }
-
-    $sql = "INSERT INTO user_info (firstname, lastname, bday, gender, email, password_original, confirm_password)
-    VALUES ('$firstname', '$lastname', '$bday', '$gender', '$email', '$password', '$confirmPassword')";
-
-    if ($conn->query($sql) === TRUE){
+    if ($stmt->execute()) {
+    echo "New user registered successfully!";
     } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
     }
+
+    $stmt->close();
+    $conn->close();
+
 ?>

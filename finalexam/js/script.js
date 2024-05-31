@@ -141,7 +141,6 @@ const showSuccess = (input) => {
 }
 
 form.addEventListener('submit', function (e) {
-    e.preventDefault();
 
     var fname = document.getElementById("firstname");
     var lname = document.getElementById("lastname");
@@ -163,19 +162,8 @@ form.addEventListener('submit', function (e) {
     let isFormValid = isFirstnameValid && isLastnameValid && isBirthdayValid && isGenderValid
     && isEmailValid && isPasswordValid && isConfirmPaswordValid;
 
-    if (isFormValid) {
-        fetch("data.php", {
-            method: "POST",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-              },
-            body: JSON.stringify({ firstname: fname, lastname: lname, bday: bday, gender: gender,
-                email: email, password: password, confirmPassword: confirmPass
-             })
-          }).then( (response) => { 
-            alert('Success');
-         });
+    if (!isFormValid) {
+        e.preventDefault();
     }
 });
 
